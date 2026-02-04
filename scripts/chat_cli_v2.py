@@ -14,7 +14,7 @@ from langchain_core.output_parsers import StrOutputParser
 # -----------------------------
 # Config
 # -----------------------------
-MISTRAL_API_KEY = "LrUF1SfniLMzv5O8kWuZA73mUxl04ihh"
+MISTRAL_API_KEY = "Rx4fJBvHFXfT7RryHk2IoHcRuvkANTLv"
 FILENAME_TEST_PATH = "/home/eric/RAG/RAG_langchain_tuto/data/raw/CV_Eric_Wetzel_2026.pdf"
 logging.basicConfig(level=logging.INFO)
 
