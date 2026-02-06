@@ -17,7 +17,7 @@ from langchain_core.output_parsers import StrOutputParser
 # =====================================================
 # CONFIG
 # =====================================================
-MISTRAL_API_KEY = "Rx4fJBvHFXfT7RryHk2IoHcRuvkANTLv"
+MISTRAL_API_KEY = "4qKlNV4ZM82sMknSJb0lo5tEQzJhZmbo"
 
 st.set_page_config(page_title="Sales RAG Assistant", layout="wide")
 st.title("🤖 Sales RAG Assistant")

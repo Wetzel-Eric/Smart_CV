@@ -11,7 +11,7 @@ from .qualification import qualify_need
 from langchain_mistralai import ChatMistralAI
 
 PDF_PATH = "/home/eric/RAG/RAG_langchain_tuto/data/raw/CV_Eric_Wetzel_2026.pdf"
-MISTRAL_API_KEY = "Rx4fJBvHFXfT7RryHk2IoHcRuvkANTLv"
+MISTRAL_API_KEY = "4qKlNV4ZM82sMknSJb0lo5tEQzJhZmbo"
 
 async def orchestrator():
     """
