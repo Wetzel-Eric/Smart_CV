@@ -1,7 +1,6 @@
 from typing import List, Dict, AsyncGenerator
-from components.base_components import Generator
-from components.base_components import PromptStrategy
-
+from components.base_components import Generator, PromptStrategy
+from trulens.apps.custom import instrument
 
 class LLMGenerator(Generator):
     """
@@ -20,6 +19,7 @@ class LLMGenerator(Generator):
     # -------------------------
     # Mode simple (CLI)
     # -------------------------
+    @instrument
     async def generate(
         self,
         question: str,
@@ -36,14 +36,12 @@ class LLMGenerator(Generator):
         prompt = template.format(**payload)
 
         response = await self.llm.ainvoke(prompt)
-
-        # ChatMistralAI renvoie un AIMessage
         return response.content
-
 
     # -------------------------
     # Mode streaming (UI/Streamlit)
     # -------------------------
+    @instrument
     async def generate_stream(
         self,
         question: str,

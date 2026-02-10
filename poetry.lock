@@ -7920,4 +7920,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4.0.0"
-content-hash = "bfafb7acddf2d7462c05c5428bf4c40f0c951fb66cd03a97461e4466d34528bf"
+content-hash = "0cbdf24d7c5a34900df9428d93e9689626b51b727d9d1d2963575f674a5abe44"

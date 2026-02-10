@@ -19,7 +19,7 @@ dependencies = [
     "sentence-transformers (>=5.2.2,<6.0.0)",
     "langchain-mistralai (>=1.1.1,<2.0.0)",
     "streamlit (>=1.53.1,<2.0.0)",
-    "trulens (>=2.6.0,<3.0.0)"
+    "trulens[all] (>=2.6.0,<3.0.0)",
 ]
 
 

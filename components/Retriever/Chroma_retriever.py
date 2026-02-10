@@ -1,43 +1,46 @@
 from components.base_components import Retriever
-from utils.models import Document, Chunk
+from utils.models import Document
 from components.Embedder.HF_embedder import HFEmbedding
 from langchain_community.vectorstores import Chroma
 
+# TruLens instrumentation
+from trulens.apps.custom import instrument
+from trulens_integration.guardrails import apply_context_guardrail
+
 class ChromaRetriever(Retriever):
     """
-    Wrapper pour Chroma VectorStore, indexation et retrieval.
+    Retriever basé sur Chroma vector store.
+    Compatible TruLens v2 et guardrails simples.
     """
 
     def __init__(self):
-        super().__init__(name="Chroma Retriever", description="Vector store with Chroma")
+        super().__init__(
+            name="Chroma Retriever",
+            description="Vector store with Chroma"
+        )
         self.db = None
 
     async def index(self, documents: list[Document], embedder: HFEmbedding):
-        """
-        Indexation des chunks via l'embedding async-friendly
-        """
-        # Récupérer tous les chunks
         texts = [chunk.content for doc in documents for chunk in doc.chunks]
 
         if not texts:
-            print("[ChromaRetriever] Aucun texte à indexer")
             return
 
-        # Embed en batch async
-        embeddings = await embedder.embed(texts)
+        # S'assurer que l'embedder LangChain est instancié
+        if embedder.model_instance is None:
+            embedder.model_instance = embedder.model_instance = HFEmbedding(model_name=embedder.model_name).model_instance
 
-        # Initialisation Chroma
-        try:
-            self.db = Chroma.from_texts(texts, embeddings)
-        except Exception as e:
-            print(f"[ChromaRetriever] Erreur lors de l'indexation Chroma: {e}")
-            self.db = None
+        # Passe l'embedder à Chroma, pas la liste d'embeddings
+        self.db = Chroma.from_texts(texts, embedding=embedder.model_instance)
 
+    # =========================
+    # TruLens instrumentation + guardrail
+    # =========================
+    @instrument
+    @apply_context_guardrail(0.5)
     async def retrieve(self, query: str, k: int = 3) -> list[str]:
-        """
-        Recherche par similarité via Chroma
-        """
         if self.db is None:
             return []
+
         results = self.db.similarity_search(query, k=k)
         return [d.page_content for d in results]
