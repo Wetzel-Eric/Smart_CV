@@ -1,0 +1,98 @@
+[
+    {
+        "nom": "Thierry Clua",
+        "titre": "Architecture Director",
+        "relation": "client",
+        "contenu": "I am delighted to recommend Eric for their exceptional assistance with Databricks and their insightful approach to user story-driven data exploitation. Eric demonstrated an impressive depth of knowledge and a keen ability to translate complex data concepts into actionable insights. Their clear vision and strategic thinking significantly enhanced our project’s outcomes.\n\nMoreover, Eric's focus on user stories ensured that our data strategies were always aligned with our business goals. Their collaborative spirit and dedication to excellence made them an indispensable part of our team. I highly recommend Eric for any role that requires a blend of technical prowess and strategic insight. Additionally, he is a very pleasant and constructive person to work with, always bringing a positive and supportive attitude to the table.\n\nGood luck for your new challenges!",
+        "entreprise": "Elior Group",
+        "screenshot": "screenshot_reco/Reco_ThierryClua.png"
+    },
+    {
+        "nom": "Vincent Bilbeissi",
+        "titre": "CDO",
+        "relation": "client",
+        "contenu": "It’s been a true pleasure working with Eric, and I can confidently say anyone who has the chance to collaborate with him is lucky.\n\nEric has the ability to listen and adapt to the needs of those around him. Whether it’s clients or community members, he takes the time to truly understand different perspectives and respond with thoughtful solutions.\n\nHis ability to connect with people fosters an environment of trust and collaboration, that was key to facilitate our partnership with Databricks.\n\nHis approach to building relationships is intentional and supportive, and it’s clear he values long-term, mutually beneficial collaborations.\n\nMost importantly, Eric is incredibly reliable. When he commits to something, you can count on him to follow through with excellence and consistency.",
+        "entreprise": "Vusion Group",
+        "screenshot": "screenshot_reco/Reco_VincentBilbeissi.png"
+    },
+    {
+        "nom": "Majdi SAADANI",
+        "titre": "Senior Data Engineer | Data Architect | AWS Certified Data Engineer | Databricks Certified (Associate & Professional)",
+        "relation": "client",
+        "contenu": "J’ai eu le plaisir de travailler avec Eric, et je ne peux que saluer son professionnalisme et son efficacité. Son sens du service, sa capacité à proposer des solutions innovantes, et sa réactivité ont grandement contribué au succès de nos projets Data. Je recommande vivement.",
+        "entreprise": "Alchimie",
+        "screenshot": "screenshot_reco/Reco_MajdiSaadani.png"
+    },
+    {
+        "nom": "Fabien Karquel",
+        "titre": "Développeur Logiciel chez Sanofi",
+        "relation": "client",
+        "contenu": "Éric nous a accompagné dans la migration et l'optimisation de nos solutions IA. Grâce à ses recommandations pertinentes nous avons pu diviser nos coûts d'infrastructure par 2 ! Et plus que son aide précieuse, Éric est une personne très agréable avec qui échanger. Ce serait avec grand plaisir de collaborer avec lui de nouveau pour de futurs projets.",
+        "entreprise": "Enginn Technology",
+        "screenshot": "screenshot_reco/Reco_FabienKarquel.png"
+    },
+    {
+        "nom": "Amadou Thioune",
+        "titre": "Senior Data Engineer",
+        "relation": "client",
+        "contenu": "J’ai eu l’occasion de travailler avec Eric sur plusieurs projets complexes liés à Databricks, et ce fut un vrai plaisir ! Eric est toujours à l’écoute et sait rendre des problématiques complexes accessibles à l’ensemble des parties prenantes pour y apporter une vraie valeur.",
+        "entreprise": "LaCollection.io",
+        "screenshot": "screenshot_reco/"
+    },
+    {
+        "nom": "Maxime Delobelle",
+        "titre": "Lead Data",
+        "relation": "fournisseur",
+        "contenu": "Ca a été un vrai plaisir de travailler avec Eric lorsqu'il nous accompagnait dans la mise en place de Databricks !",
+        "entreprise": "Groupe TopChrono",
+        "screenshot": "screenshot_reco/Reco_MaximeDelobelle.png"
+    },
+    {
+        "nom": "Vattana CHHAY",
+        "titre": "Consultant Freelance en Gestion de projets CRM | Marketing Automation 🎯 | Data",
+        "relation": "client",
+        "contenu": "Eric est le genre de profil qui vous rassure. De part ses capacités techniques et sa compréhension métier, les use cases abordés sont agréablement challengés, devenant ainsi pertinents et après coup, passionnants. Je garde en souvenir de bons échanges et ne peut qu'être confiant concernant ses futures positions.",
+        "entreprise": "Fitness Park",
+        "screenshot": "screenshot_reco/Reco_VattanaChay.png"
+    },
+    {
+        "nom": "Valentin Noaro",
+        "titre": "Faciliter l’accès au foncier pour nos champions industriels de demain 🏭 🇫🇷 @FIND",
+        "relation": "collègue",
+        "contenu": "I had the pleasure of working with Éric and can confidently say he is one of the most reliable and dedicated professionals I’ve collaborated with. His serious approach and commitment to delivering top-quality work always stood out, especially when facing complex challenges. Éric has an exceptional ability to analyze problems quickly, identify the right solutions, and communicate them in a clear and structured way that brings the whole team forward.\n\nWhat I appreciated most was his sense of mentoring. He always took the time to share knowledge, offer guidance, and provide thoughtful feedback. His support played an important role in my own development, and I am grateful for the professional growth it enabled.\n\nÉric brings together expertise, a strong problem-solving mindset, and the human qualities of a true mentor — a combination that makes him a standout colleague in any environment.",
+        "entreprise": "Databricks",
+        "screenshot": "screenshot_reco/Reco_ValentinNoaro.png"
+    },
+    {
+        "nom": "Mathieu Nakas",
+        "titre": "Account Manager",
+        "relation": "collègue",
+        "contenu": "It is always great to partner with Eric. When it comes to build business, he is always a key player to support opportunities: mastering his topic, great champion builder, always giving meaningful feedbacks. Eric is a clear added-value for any team he is working with. On top of that, he is a very appreciated person you can enjoy with!",
+        "entreprise": "Datarobot",
+        "screenshot": "screenshot_reco/Reco_MathieuNakas.png"
+    },
+    {
+        "nom": "Hortense Papot-Bates",
+        "titre": "Regional Director, Account Manager",
+        "relation": "collègue",
+        "contenu": "I have worked alongside Eric for a year at Datarobot and it was a real pleasure to do so for a few reasons. First of all he made my job as sales a lot easier by being extremely involved in the sales cycles, being very organised on what needed to happen, building the right relationship with the right people, thinking strategically about opportunities.\nHe is a very good relationship builder because he is very humble, genuine and a great professional that you want to spend time with.\nHe is very strategic in the way he organises and analyses opportunities and this really was very beneficial to our prospects and customers.\nI would absolutely recommend Eric and I hope I can work with him in the future again.",
+        "entreprise": "Datarobot",
+        "screenshot": "screenshot_reco/Reco_HortensePapot.png"
+    },
+    {
+        "nom": "Elise Sainderichin",
+        "titre": "PreSales Engineer",
+        "relation": "collègue",
+        "contenu": "« Solution oriented » is what comes to my mind when I think about Eric. No matter how big or small the circumstance, Eric always finds a way to get things done and done right. I had the pleasure of working with Eric at DataRobot in the EMEA PreSales team.\n\nI was particularly impressed by Eric’s strategic and critical thinking. He proved strong ability to think, evaluate, analyze, and decide clearly and quickly, in such a way that helps solve a problem. Being customer facing, Eric always focuses on solving the « why » and with his determination and resilience this is something he has successfully achieved.\nI can’t wait for another round of Puissance 4, where I can catch-up the score.\n\nAny employee would be lucky to have Eric joining his/her team!",
+        "entreprise": "Datarobot",
+        "screenshot": "screenshot_reco/Reco_EliseSainderichin.png"
+    },
+    {
+        "nom": "Jean Marc Marczak",
+        "titre": "Senior Manager",
+        "relation": "collègue",
+        "contenu": "It was really a pleasure to welcome Eric in my team. I have appreciated a lot, first, the way he became a full member of our team thanks to his team spirit & open mind attitude, and second, his engagement to deliver On Time and On Quality his deliverables and even more to go beyond the initial scope.\nFeedback from the team was excellent: Curious, Speaking up, Propose, Evolve, Being himself…\nI’m sure that he is a very capable man with great intellectual capacity and more with business ability.",
+        "entreprise": "Airbus Defense & Space",
+        "screenshot": "screenshot_reco/Reco_JeanMarcMarczak.png"
+    }
+]

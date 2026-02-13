@@ -1,5 +1,10 @@
 [tool.poetry]
-package-mode = false
+package-mode = true
+packages = [
+    { include = "components" },
+    { include = "trulens_integration" },
+    { include = "utils" }
+]
 
 [project]
 name = "rag-cv"
@@ -29,5 +34,5 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "ipykernel (>=7.1.0,<8.0.0)"
+    "ipykernel (>=7.1.0,<8.0.0)",
 ]

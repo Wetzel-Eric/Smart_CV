@@ -1,28 +1,19 @@
-import asyncio
+from flow.pipeline import Pipeline
+from flow.state import RAGState
+from flow.steps.reformulation_step import ReformulationStep
+from flow.steps.retrieval_step import RetrievalStep
+from flow.steps.generation_step import GenerationStep
 
-async def run_flow(generator, user_input, conversation, enable_trulens=False, feedbacks=None):
-    """
-    Exécute le flow RAG pour une question utilisateur.
+class SalesPipeline:
+    def __init__(self, retriever, reform_gen, commercial_gen):
+        self.steps = [  
+            ReformulationStep(reform_gen),  # Step 0: Reformulation
+            RetrievalStep(retriever),       # Step 1: Retrieval
+            GenerationStep(commercial_gen)  # Step 2: Generation
+        ]
+        self.pipeline = Pipeline(self.steps) 
 
-    :param generator: instance de LLMGenerator
-    :param user_input: texte utilisateur
-    :param conversation: historique messages [{"role":..,"content":..}]
-    :param enable_trulens: bool, active TruLens si True
-    :param feedbacks: liste de feedbacks TruLens
-    :return: (réponse texte, record TruLens ou None)
-    """
-    if enable_trulens:
-        from trulens_integration.wrap_rag import wrap_rag_with_trulens
-
-        tru_app = wrap_rag_with_trulens(generator, feedbacks=feedbacks)
-        async with tru_app as record:
-            answer = await generator.generate(user_input, context=[], conversation=conversation)
-            return answer, record
-    else:
-        answer = await generator.generate(user_input, context=[], conversation=conversation)
-        return answer, None
-
-
-def run_flow_sync(*args, **kwargs):
-    """Wrapper Streamlit-safe pour exécuter run_flow depuis UI"""
-    return asyncio.run(run_flow(*args, **kwargs))
+    async def run(self, question: str, qualification_text: str):
+        state = RAGState(question=question, qualification_text=qualification_text)
+        state = await self.pipeline.run(state)
+        return state.answer
