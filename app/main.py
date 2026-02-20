@@ -48,6 +48,14 @@ chat = st.Page("pages/matching_chat.py", title="🤖 Chat Matching")
 reco = st.Page("pages/recommendations.py", title="💡 Recommandations")
 projects = st.Page("pages/projects.py", title="🚀 Projets")
 
+
 # Navigation
 pg = st.navigation([chat, reco, projects])
+
+# Ajout du badge GitHub juste en dessous (solution ultra-simple)
+st.markdown(
+    '[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/Wetzel-Eric/Smart_CV?quickstart=1)',
+    unsafe_allow_html=True
+)
+
 pg.run()

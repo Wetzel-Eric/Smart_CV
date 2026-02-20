@@ -1,5 +1,88 @@
 # My RAG Project
 
+# 🚀 RAG Pipeline pour CV Matching
+
+Une application Streamlit pour analyser des CVs et répondre aux questions des recruteurs en utilisant un pipeline RAG (Retrieval-Augmented Generation).
+
+## 📦 Installation
+
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/Wetzel-Eric/Smart_CV.git
+   cd rag-cv-matching
+
+
+2. Installer les dépendances :
+poetry install
+
+
+3. Configurer .env :
+cp .env.example .env
+
+Ajoutez vos clés API dans .env.
+
+## 🏃 Utilisation
+Lancer l'application :
+streamlit run app/main.py
+
+## 🧪 Tests
+Exécuter les tests unitaires :
+pytest tests/
+
+## 📂 Structure du Projet
+.
+├── app/                  # Frontend Streamlit
+├── core/                 # Logique métier
+├── components/           # Composants réutilisables
+├── config/               # Configuration
+├── data/                 # Données (PDFs, index Chroma)
+├── monitoring/           # Observabilité
+├── tests/                # Tests
+└── docs/                 # Documentation
+
+## 🔧 Configuration
+Modifier config/settings.py pour ajuster :
+- pdf_path : Chemin vers le PDF à analyser.
+- chunk_size/chunk_overlap : Paramètres de découpage du texte.
+- llm_model : Modèle LLM utilisé (ex: mistral-large-latest).
+
+---
+
+### **12.2. `docs/architecture.md`**
+```markdown
+# Architecture du Pipeline RAG
+
+## 1. Couches Principales
+
+### 1.1. Frontend (`app/`)
+- **Streamlit** : Interface utilisateur pour interagir avec le pipeline.
+- **Services** : Couche d'abstraction entre l'UI et le métier (ex: `bootstrap_service.py`).
+
+### 1.2. Métier (`core/`)
+- **Orchestrateur** : Coordination des étapes du pipeline RAG.
+- **Bootstrap** : Initialisation des composants et du pipeline.
+
+### 1.3. Composants (`components/`)
+- **Reader** : Chargement des documents (PDF).
+- **Chunker** : Découpage des documents en chunks.
+- **Embedder** : Génération d'embeddings pour les chunks.
+- **Retriever** : Récupération des contextes pertinents (Chroma).
+- **Generator** : Génération de réponses (LLM).
+
+### 1.4. Infrastructure (`monitoring/`, `config/`)
+- **TruLens** : Observabilité et feedbacks.
+- **Configuration** : Paramètres centralisés.
+
+
+3. Points Clés
+
+- **Injection de dépendances** : Via dependency_injector pour une meilleure testabilité.
+- **Cache des embeddings** : Persistance de l'index Chroma pour éviter les recalculs.
+- **Gestion des erreurs** : Retries exponentiels et validation des entrées.
+- **Découplage UI/Métier** : Les services (app/services/) isolent Streamlit du code métier.
+
+
+
 ## Objectif
 Ce projet implémente un système RAG (Retrieval-Augmented Generation) pour fournir des réponses contextuelles à partir d'un corpus de documents.
 
