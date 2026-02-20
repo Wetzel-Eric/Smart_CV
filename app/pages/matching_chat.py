@@ -7,11 +7,13 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger("matching_chat")
 
 st.title("🤖 Smart CV - Eric Wetzel - AI Engineer")
-st.markdown("""Ce Smart CV vous permet d'interagir directement avec mes expériences et réalisations, pour obtenir instantanément les informations pertinentes sans perdre de temps avec des détails superflus.  
+st.markdown("""
+Ce CV interactif vous permet d'**interagir directement** avec mes **expériences** et **réalisations**,
+pour obtenir **instantanément** les informations **pertinentes** sans perdre de temps.  
   
-✅ Dialoguez avec mon parcours professionnel  
-✅ Accédez à l'essentiel en quelques clics  
-✅ Validez mon expertise via mes projets GitHub et des recommandations vérifiables
+✅ **Dialoguez** avec mon parcours professionnel  
+✅ **Accédez** à l'essentiel en quelques clics  
+✅ **Validez** mon expertise via mes projets GitHub et des **recommendations vérifiables**  
 """)
 
 # Initialisation des états 
