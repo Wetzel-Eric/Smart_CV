@@ -1,8 +1,9 @@
 from typing import Dict, List, Tuple
 
 QUESTIONS: List[Tuple[str, str]] = [
-    ("pain", "Quel est le problème principal que cette personne doit résoudre ?"),
+    ("pain", "Quelle problématique prioritaire ce recrutement doit-il permettre de résoudre ?"),
     ("tempo", "Quel est l’horizon temporel ?"),
+    ("techno", "Quelles technologies doivent être maîtrisées pour ce poste ?")
     ("success", "À quoi ressemble le succès dans 6 mois ?"),
 ]
 
