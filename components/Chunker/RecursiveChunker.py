@@ -1,19 +1,27 @@
 from components.base_components import Chunker
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from utils.models import Document, Chunk
+import logging
+
+logger = logging.getLogger("chunker")
 
 class RecursiveChunker(Chunker):
-    def __init__(self):
-        super().__init__(name="Recursive Chunker", description="Split documents recursively")
-
-    async def chunk(self, documents: list[Document]) -> list[Document]:
-        splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,
-            chunk_overlap=200,
+    def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 200):
+        # Pas d'appel à super().__init__()
+        self.name = "Recursive Chunker"
+        self.description = "Split documents recursively"
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
             separators=["\n\n", "\n", ".", "!", "?"]
         )
+
+    async def chunk(self, documents: list[Document]) -> list[Document]:
+        logger.info(f"Chunking {len(documents)} documents...")
         for doc in documents:
-            splits = splitter.split_text(doc.content)
-            for i, chunk_text in enumerate(splits):
-                doc.chunks.append(Chunk(chunk_text, i))
+            splits = self.text_splitter.split_text(doc.content)
+            doc.chunks = [Chunk(text, i) for i, text in enumerate(splits)]
+        logger.info(f"Generated {sum(len(doc.chunks) for doc in documents)} chunks")
         return documents

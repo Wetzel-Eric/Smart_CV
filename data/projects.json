@@ -1,0 +1,67 @@
+{
+  "projets": [
+    {
+      "titre": "AI_based_sales_forecasting_for_warehouses_and_stores",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/AI_based_sales_forecasting_for_warehouses_and_stores.png"
+    },
+    {
+      "titre": "Smart CV Matching using RAG",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/Smart_CV_Matching_using_RAG.png"
+    },
+    {
+      "titre": "Voice Based Traceability and RealTime Ressource Planning for Agriculture",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/Voice_Based_Traceability_and_RealTime_Ressource_Planning_for_Agriculture.png"
+    },
+    {
+      "titre": "Integration of WeatherData into sales forecasting",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/Integration_of_Weather_Data_into_sales_forecasting.png"
+    },
+    {
+      "titre": "Scaling and industrializing AI Forecasting Projects",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/Scaling_and_industrializing_AI_Forecasting_Projects.png"
+    },
+    {
+      "titre": "RealTime Product Substitution Recommendations for OutOfStock SKU",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/RealTime_Product_Substitution_Recommendations_for_OutOfStock_SKU.png"
+    },
+    {
+      "titre": "RealTime Product Substitution Recommendations for OutOfStock SKU",
+      "description_courte": "En 1 phrase: ce que vous avez fait + résultat clé (ex: 'Migration vers Databricks avec -50% de coûts et +30% de performance')",
+      "role": "Data scientist",
+      "solution": "solutions TBD",
+      "technos": ["Databricks", "Python", "Spark"], 
+      "competences": ["Optimisation", "Formation", "Architecture"],
+      "image": "/screenshot_projects/RealTime_Product_Substitution_Recommendations_for_OutOfStock_SKU.png"
+    }
+  ]
+}
