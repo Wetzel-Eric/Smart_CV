@@ -13,7 +13,8 @@ pour obtenir **instantanément** les informations **pertinentes** sans perdre de
   
 ✅ **Dialoguez** avec mon parcours professionnel  
 ✅ **Accédez** à l'essentiel en quelques clics  
-✅ **Validez** mon expertise via mes projets GitHub et des **recommendations vérifiables**  
+✅ **Validez** mon expertise via mes **projets** GitHub et des **recommendations vérifiables**  
+  
 """)
 
 # Initialisation des états 
