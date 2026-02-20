@@ -48,14 +48,23 @@ chat = st.Page("pages/matching_chat.py", title="🤖 Chat Matching")
 reco = st.Page("pages/recommendations.py", title="💡 Recommandations")
 projects = st.Page("pages/projects.py", title="🚀 Projets")
 
+# Page GitHub qui affiche juste le badge cliquable
+def github_page():
+    st.markdown(
+        """
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="https://github.com/Wetzel-Eric/Smart_CV" target="_blank">
+                <img src="https://github.com/codespaces/badge.svg" alt="Open in GitHub"
+                     style="height: 30px; margin-bottom: 20px;">
+            </a>
+            <p style="font-size: 0.9em; color: #666;">Voir le code source sur GitHub</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-# Navigation
-pg = st.navigation([chat, reco, projects])
+github = st.Page(github_page, title="GitHub", icon="🐙")
 
-# Ajout du badge GitHub juste en dessous (solution ultra-simple)
-st.markdown(
-    '[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/Wetzel-Eric/Smart_CV?quickstart=1)',
-    unsafe_allow_html=True
-)
-
+# Navigation avec toutes les pages y compris GitHub
+pg = st.navigation([chat, reco, projects, github])
 pg.run()

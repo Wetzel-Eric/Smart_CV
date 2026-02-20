@@ -25,6 +25,7 @@ dependencies = [
     "langchain-mistralai (>=1.1.1,<2.0.0)",
     "streamlit (>=1.53.1,<2.0.0)",
     "trulens[all] (>=2.6.0,<3.0.0)",
+    "dependency-injector (>=4.40.0,<5.0.0)",
 ]
 
 
