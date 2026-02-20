@@ -6,7 +6,12 @@ from core.qualification import QUESTIONS
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger("matching_chat")
 
-st.title("🤖 Chat Matching")
+st.title("🤖 Smart CV - Eric Wetzel - AI Engineer")
+st.markdown("Ce CV interactif vous permet d'interagir directement avec mes expériences et réalisations, pour obtenir instantanément les informations pertinentes sans perdre de temps avec des détails superflus.
+✅ Dialoguez avec mon parcours professionnel
+✅ Accédez à l'essentiel en quelques clics
+✅ Validez mon expertise via mes projets GitHub et des recommandations vérifiables
+")
 
 # Initialisation des états 
 if "messages" not in st.session_state:
