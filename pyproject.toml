@@ -2,7 +2,6 @@
 package-mode = true
 packages = [
     { include = "components" },
-    { include = "trulens_integration" },
     { include = "utils" }
 ]
 
