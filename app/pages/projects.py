@@ -127,31 +127,3 @@ for project in projects:
         st.markdown('</div>', unsafe_allow_html=True)
         st.divider()
 
-"""
-# Statistiques
-st.sidebar.markdown("### Statistiques")
-st.sidebar.markdown(f"**Total:** {len(projects)} projets")
-
-# Compter les technologies les plus utilisées
-tech_counts = {}
-for project in projects:
-    if "technos" in project:
-        for tech in project["technos"]:
-            tech_counts[tech] = tech_counts.get(tech, 0) + 1
-
-if tech_counts:
-    st.sidebar.markdown("**Technologies les plus utilisées:**")
-    for tech, count in sorted(tech_counts.items(), key=lambda x: x[1], reverse=True):
-        st.sidebar.markdown(f"- {tech}: {count} projet(s)")
-
-# Compter les rôles
-role_counts = {}
-for project in projects:
-    role = project.get("role", "Non spécifié")
-    role_counts[role] = role_counts.get(role, 0) + 1
-
-if role_counts:
-    st.sidebar.markdown("**Rôles occupés:**")
-    for role, count in role_counts.items():
-        st.sidebar.markdown(f"- {role}: {count} projet(s)")
-"""
