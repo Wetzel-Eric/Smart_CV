@@ -80,8 +80,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# J'AI SUPPRIMÉ UNIQUEMENT CETTE LIGNE: recommendations.sort(key=lambda x: x["nom"])
-
 # Affichage de chaque recommandation
 for reco in recommendations:
     with st.container():
@@ -103,7 +101,7 @@ for reco in recommendations:
         st.markdown(f'<span class="relation-badge {relation_class}">{reco["relation"]}</span>', unsafe_allow_html=True)
 
         # Contenu de la recommandation
-        st.markdown(f'<div class="recommendation-content">{reco["contenu"]}</div>', unsafe_allow_html=True)
+        #st.markdown(f'<div class="recommendation-content">{reco["contenu"]}</div>', unsafe_allow_html=True)
 
         # Image de la recommandation (si elle existe)
         if "screenshot" in reco and reco["screenshot"]:
