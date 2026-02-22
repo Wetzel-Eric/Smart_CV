@@ -25,13 +25,6 @@ image_dir = Path("data/screenshot_projects")
 # Style CSS pour améliorer l'affichage
 st.markdown("""
 <style>
-    .project-card {
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 30px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
     .project-header {
         display: flex;
         justify-content: space-between;
